@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Milestone Guide — Checkr Sales Onboarding 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --navy:#1E448F;--teal:#45C0B9;--orange:#F37D53;--green:#29736F;--slate:#67727C;
+  --white:#fff;--dark:#0B1626;--bg:#F7F9FC;--border:#D4DAE1;
+  --navy-lt:#EBF0FA;--teal-lt:#E6F7F6;--org-lt:#FEF0EB;--grn-lt:#E3F2F1;--slt-lt:#F1EFF8;
+}
+body{font-family:'DM Sans',sans-serif;background:var(--bg);color:var(--dark);font-size:14px;line-height:1.6}
+.nav{background:var(--navy);padding:0 24px;display:flex;align-items:center;height:52px;position:sticky;top:0;z-index:100;gap:0}
+.nav .logo{color:#fff;font-weight:600;font-size:14px;margin-right:28px;flex-shrink:0}
+.nav a{color:rgba(255,255,255,.7);text-decoration:none;font-size:13px;font-weight:500;padding:0 14px;height:52px;display:flex;align-items:center;border-bottom:3px solid transparent;transition:all .15s}
+.nav a:hover,.nav a.active{color:#fff;border-bottom-color:var(--teal)}
+.hero{background:var(--navy);padding:36px 24px 32px;color:#fff}
+.hero-ey{font-size:11px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--teal);margin-bottom:10px}
+.hero h1{font-size:32px;font-weight:600;margin-bottom:8px}
+.hero p{color:rgba(255,255,255,.7);font-size:15px;}
+.back{display:inline-flex;align-items:center;gap:6px;color:rgba(255,255,255,.6);font-size:13px;text-decoration:none;margin-bottom:16px}
+.back:hover{color:#fff}
+.main{padding:32px 24px}
+
+/* MILESTONE BLOCK */
+.ms-block{margin-bottom:32px}
+.ms-hdr{padding:18px 24px;border-radius:10px 10px 0 0;display:flex;align-items:baseline;gap:12px}
+.ms-hdr.navy{background:var(--navy)}
+.ms-hdr.teal{background:var(--teal)}
+.ms-hdr.orange{background:var(--orange)}
+.ms-hdr.green{background:var(--green)}
+.ms-hdr.slate{background:var(--slate)}
+.ms-hdr .m-label{font-size:10px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:rgba(255,255,255,.7)}
+.ms-hdr h2{font-size:20px;font-weight:600;color:#fff}
+.ms-hdr .m-sub{font-size:12.5px;color:rgba(255,255,255,.7);margin-left:auto}
+
+/* TABLE */
+.ms-table{width:100%;border-collapse:collapse;background:#fff;border:1px solid var(--border);border-top:none;border-radius:0 0 10px 10px;overflow:hidden}
+.ms-table th{padding:10px 16px;font-size:11px;font-weight:600;text-transform:uppercase;letter-spacing:.07em;color:var(--slate);background:var(--bg);border-bottom:1px solid var(--border);text-align:left}
+.ms-table td{padding:14px 16px;vertical-align:top;border-bottom:1px solid var(--border);font-size:13px;line-height:1.55}
+.ms-table tr:last-child td{border-bottom:none}
+.ms-table tr:nth-child(even) td{background:#FAFBFD}
+.ms-table td:not(:last-child){border-right:1px solid var(--border)}
+.ms-table th:not(:last-child){border-right:1px solid var(--border)}
+.col-comp{width:18%}
+.col-do{width:32%}
+.col-meas{width:28%}
+.col-sess{width:22%}
+
+/* COMPETENCY BADGE */
+.c-badge{font-size:11px;font-weight:600;padding:2px 9px;border-radius:20px;display:inline-block;white-space:nowrap}
+.c-badge.navy{background:var(--navy-lt);color:var(--navy)}
+.c-badge.teal{background:var(--teal-lt);color:var(--green)}
+.c-badge.orange{background:var(--org-lt);color:#B85020}
+.c-badge.green{background:var(--grn-lt);color:var(--green)}
+.c-badge.slate{background:var(--slt-lt);color:var(--slate)}
+
+/* BULLETS */
+.blist{margin:0;padding-left:15px}
+.blist li{margin-bottom:4px;line-height:1.5}
+
+/* SESSION PILLS */
+.s-pills{display:flex;flex-wrap:wrap;gap:5px}
+.s-pill{font-size:11px;font-weight:500;padding:2px 9px;border-radius:16px;text-decoration:none;transition:all .12s}
+.s-pill.navy{background:var(--navy-lt);color:var(--navy)}
+.s-pill.navy:hover{background:var(--navy);color:#fff}
+.s-pill.teal{background:var(--teal-lt);color:var(--green)}
+.s-pill.teal:hover{background:var(--teal);color:#fff}
+.s-pill.orange{background:var(--org-lt);color:#B85020}
+.s-pill.orange:hover{background:var(--orange);color:#fff}
+.s-pill.green{background:var(--grn-lt);color:var(--green)}
+.s-pill.green:hover{background:var(--green);color:#fff}
+.s-pill.slate{background:var(--slt-lt);color:var(--slate)}
+.s-pill.slate:hover{background:var(--slate);color:#fff}
+</style>
+</head>
+<body>
+<nav class="nav">
+  <span class="logo">Checkr Sales Onboarding 2026</span>
+  <a href="index.html">Overview</a>
+  <a href="prework.html">Pre-Work</a>
+  <a href="bootcamp.html">Bootcamp</a>
+  <a href="syllabus.html">Content Library</a>
+  <a href="competency.html">Competency Framework</a>
+  <a href="milestones.html" class="active">Milestone Guide</a>
+  <a href="milestones2.html">My Milestones</a>
+  <a href="timeline.html">Journey</a>
+</nav>
+<div class="hero">
+  <a href="index.html" class="back">← Back to Overview</a>
+  <div class="hero-ey">Milestone Guide</div>
+  <h1>What a rep should know</h1>
+  <p>Minimum proficiency expectations at each milestone. Use as a shared checklist during manager check-ins. Click any session pill to see the full session description in the syllabus.</p>
+</div>
+<div class="main">
+
+<!-- WEEK 1 -->
+<div class="ms-block" id="week1">
+  <div class="ms-hdr navy"><span class="m-label">Milestone</span><h2>After Week 1</h2><span class="m-sub">Immersion · Days 1–5</span></div>
+  <table class="ms-table">
+    <tr><th class="col-comp">Competency</th><th class="col-do">What they should be able to do</th><th class="col-meas">How we measure it</th><th class="col-sess">Supporting sessions</th></tr>
+    <tr>
+      <td><span class="c-badge navy">Product Knowledge</span></td>
+      <td>Articulate what background checks are, why they matter, and the pain points Checkr addresses — in their own words, no slides</td>
+      <td><ul class="blist"><li>Manager asks rep to pitch "Why Checkr?" cold</li><li>Pass = clear problem/solution/differentiation in under 2 min</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Welcome to Checkr Sales — Enablement Kickoff</a><a href="syllabus.html" class="s-pill navy">Review: Pains and Personas</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge navy">ICP & Persona Fluency</span></td>
+      <td>Name all 5 ICP industries, explain full vs. partial fit, describe pain points of at least 2 buyer personas</td>
+      <td><ul class="blist"><li>Persona/Trigger Activity completed</li><li>Rep identifies pain triggers for 2 real LinkedIn contacts unprompted</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Review: Pains and Personas</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge navy">Product Knowledge</span></td>
+      <td>Name Checkr's 3 packages, core screening types, and at least 3 add-on products. Know where to find resources in Checkpoint</td>
+      <td><ul class="blist"><li>Written Product Cert passed (post-bootcamp, Weeks 3–4)</li><li>Manager spot-check: "What package for a 500-person retailer?"</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Product 101</a><a href="syllabus.html" class="s-pill navy">Product 101</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge navy">Competitive Positioning</span></td>
+      <td>State Checkr's top 3 differentiators vs. First Advantage, Sterling, and HireRight without prompting</td>
+      <td><ul class="blist"><li>Live competitive role-play: handle "we use Sterling"</li><li>Pass = clear differentiation, no features-first response</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Competitor Positioning</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge navy">Productivity & Tool Mastery</span></td>
+      <td>Logged into and navigating all 10 core tools: Salesforce, Outreach, Gong, LinkedIn SN, Demandbase, ZoomInfo, Checkpoint, Credal, Athean, and Sendoso</td>
+      <td><ul class="blist"><li>Tool access checklist completed in Mindtickle</li><li>Manager confirms all green before end of immersion week</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Sales Tools Setup</a><a href="syllabus.html" class="s-pill navy">Checkpoint</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge navy">Role & Expectations</span></td>
+      <td>Know their quota, ramp schedule, KPIs, and milestone check-in dates. Know who their manager, BDR partner, and SE are</td>
+      <td><ul class="blist"><li>Rep recites ramp quota, daily activity targets, and check-in dates unprompted</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill navy">Role Overview & Expectations</a></div></td>
+    </tr>
+  </table>
+</div>
+
+<!-- MONTH 1 -->
+<div class="ms-block" id="month1">
+  <div class="ms-hdr teal"><span class="m-label">Milestone</span><h2>After Month 1</h2><span class="m-sub">Post-bootcamp · Weeks 3–4</span></div>
+  <table class="ms-table">
+    <tr><th class="col-comp">Competency</th><th class="col-do">What they should be able to do</th><th class="col-meas">How we measure it</th><th class="col-sess">Supporting sessions</th></tr>
+    <tr>
+      <td><span class="c-badge teal">Command of the Message</span></td>
+      <td>Walk through the full CoM framework for 2+ personas — Before/After Scenario, Required Capabilities, Differentiators, Discovery Qs — without notes</td>
+      <td><ul class="blist"><li>Manager runs a live CoM role-play for a specific persona</li><li>Rep scores ≥80% on the Mindtickle CoM rubric</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Command of the Message Deep Dive</a><a href="syllabus.html" class="s-pill teal">Command of the Message & MEDDPICC</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge teal">Effective Comm — Cold Call</span></td>
+      <td>Cold Call Cert passed. Handling top 5 objections using AAA or Exactly Method with confidence on live calls</td>
+      <td><ul class="blist"><li>Cold Call Cert passed (≥80%)</li><li>Manager reviews 2 live Gong cold calls from Weeks 3–4</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Cold Call Role-Play</a><a href="syllabus.html" class="s-pill teal">Overcoming Inertia</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge teal">Effective Comm — Discovery</span></td>
+      <td>Discovery Cert passed. Running a structured discovery, mapping pain to Checkr value, identifying next steps without in-call coaching</td>
+      <td><ul class="blist"><li>Discovery Call Cert passed</li><li>First live disco logged in SFDC, Gong-reviewed within 24 hrs</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Discovery Call Role-Play</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge teal">Outbound Motion & Prospecting</span></td>
+      <td>Independently prioritize accounts using Demandbase, SCOUT, and LinkedIn SN. Sequences active in Outreach</td>
+      <td><ul class="blist"><li>Week 3 check-in: rep presents top 5 accounts with intent data, SCOUT triggers, and contacts</li><li>Outreach dashboard shows sequences active and calls/emails logged</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Using Gong</a><a href="syllabus.html" class="s-pill teal">Prospecting Workflow</a><a href="syllabus.html" class="s-pill teal">Tools: Athean &amp; Sequences Deep Dive</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge teal">Outbound Motion & Prospecting</span></td>
+      <td>At least 1 qualified opportunity created in Salesforce from outbound activity, with MEDDPICC fields populated</td>
+      <td><ul class="blist"><li>Manager reviews SFDC — 1+ opp created with MEDDPICC populated</li><li>30-day check-in: rep added to round robin</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Opp Walkthrough</a><a href="syllabus.html" class="s-pill teal">Sales Process & SFDC Stage Management</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge teal">ICP & Persona Fluency</span></td>
+      <td>Pitch Checkr to a Retail HR Director and Hospitality Ops Manager — accurate pain points, relevant proof point used</td>
+      <td><ul class="blist"><li>Manager role-play: no notes</li><li>Pass = accurate industry pain points + at least one proof point cited correctly</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill teal">Advanced Retail Deep Dive</a><a href="syllabus.html" class="s-pill teal">Advanced Hospitality Deep Dive</a></div></td>
+    </tr>
+  </table>
+</div>
+
+<!-- MONTH 3 -->
+<div class="ms-block" id="month3">
+  <div class="ms-hdr orange"><span class="m-label">Milestone</span><h2>After Month 3</h2><span class="m-sub">45-day &amp; 90-day pipeline reviews</span></div>
+  <table class="ms-table">
+    <tr><th class="col-comp">Competency</th><th class="col-do">What they should be able to do</th><th class="col-meas">How we measure it</th><th class="col-sess">Supporting sessions</th></tr>
+    <tr>
+      <td><span class="c-badge orange">Effective Communication</span></td>
+      <td>Manage a deal from first outbound touch through pricing call without manager involvement</td>
+      <td><ul class="blist"><li>At least 1 active opp progressed through disco and demo without manager shadowing</li><li>Confirmed in SFDC stage progression</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Discovery Call Role-Play</a><a href="syllabus.html" class="s-pill orange">Demo Call Role-Play</a><a href="syllabus.html" class="s-pill orange">Pricing Call Role-Play</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge orange">Effective Comm — Demo</span></td>
+      <td>Demo Cert passed. Running tailored demos that map to the prospect's pain points — solution sell, not feature walkthrough</td>
+      <td><ul class="blist"><li>Demo Cert passed (≥80%)</li><li>Manager reviews 1 live Gong demo at Month 2 check-in</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Demo Call Role-Play</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge orange">Opportunity & Revenue Mgmt</span></td>
+      <td>Pipeline meets coverage requirements. Articulate status, next step, and close plan for every active opp</td>
+      <td><ul class="blist"><li>45-Day Pipeline Review: rep presents full pipeline in SFDC</li><li>Manager assesses coverage ratio, MEDDPICC completeness, next steps</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Sales Process & SFDC Stage Management</a><a href="syllabus.html" class="s-pill orange">Opp Walkthrough</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge orange">Command of the Message</span></td>
+      <td>Apply MEDDPICC to all active deals. Identify Economic Buyer, Champion, and Decision Criteria for every opp in SFDC</td>
+      <td><ul class="blist"><li>Manager reviews MEDDPICC fields at 90-Day Review</li><li>No blank required fields accepted</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Command of the Message & MEDDPICC</a><a href="syllabus.html" class="s-pill orange">Advanced CoM & MEDDPICC</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge orange">Effective Comm — Cold Call</span></td>
+      <td>Overcome price, incumbent, timing, and compliance objections live with minimal manager help</td>
+      <td><ul class="blist"><li>Manager reviews 2 Gong calls from Months 2–3 against AAA/Exactly framework</li><li>Rep self-scores before review</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Overcoming Inertia</a><a href="syllabus.html" class="s-pill orange">Cold Call Role-Play</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge orange">ICP & Persona Fluency</span></td>
+      <td>All 5 industry Mindtickle modules completed. Tailor messaging and proof points by industry for every prospect</td>
+      <td><ul class="blist"><li>All 5 industry modules completed and quizzes passed</li><li>Confirmed in Mindtickle report at 90-Day Review</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill orange">Advanced Manufacturing Deep Dive</a><a href="syllabus.html" class="s-pill orange">Advanced Transportation Deep Dive</a><a href="syllabus.html" class="s-pill orange">Advanced Staffing Deep Dive</a></div></td>
+    </tr>
+  </table>
+</div>
+
+<!-- MONTH 6 -->
+<div class="ms-block" id="month6">
+  <div class="ms-hdr green"><span class="m-label">Milestone</span><h2>After Month 6</h2><span class="m-sub">6-month proficiency review</span></div>
+  <table class="ms-table">
+    <tr><th class="col-comp">Competency</th><th class="col-do">What they should be able to do</th><th class="col-meas">How we measure it</th><th class="col-sess">Supporting sessions</th></tr>
+    <tr>
+      <td><span class="c-badge green">Opportunity & Revenue Mgmt</span></td>
+      <td>At or trending toward ramp-adjusted quota. Self-diagnose pipeline and activity gaps unprompted</td>
+      <td><ul class="blist"><li>Quota attainment vs. ramp target reviewed</li><li>Rep presents own gap analysis and 30-day action plan before the meeting</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Tools: Gong- Call Intelligence</a><a href="syllabus.html" class="s-pill green">Weekly Gong Call Review</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge green">Command of the Message</span></td>
+      <td>Identify and develop a champion in each top opp. Equip them with proof points, ROI docs, and talk tracks</td>
+      <td><ul class="blist"><li>Manager asks rep to walk through champion strategy on top 2 active opps</li><li>Rep names champion, motivation, and materials provided</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Advanced CoM & MEDDPICC</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge green">Competitive Positioning</span></td>
+      <td>Position Checkr vs. any named competitor on a live call without becoming defensive or leading with features</td>
+      <td><ul class="blist"><li>Manager reviews 1 Gong call where a competitor was mentioned</li><li>Pass = no features-first response, battlecard used accurately</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Competitor Positioning</a><a href="syllabus.html" class="s-pill green">Overcoming Inertia</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge green">Opportunity & Revenue Mgmt</span></td>
+      <td>Submit accurate weekly forecasts. Manager can rely on pipeline data without digging into every deal</td>
+      <td><ul class="blist"><li>Manager compares 6 weeks of forecasts vs. actuals</li><li>Benchmark = within 15% of called number</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Tools: Gong- Call Intelligence</a><a href="syllabus.html" class="s-pill green">Revenue Management / Looker Dashboards</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge green">Outbound Motion & Prospecting</span></td>
+      <td>At least one active partner relationship and participated in at least one event with pre/post outreach completed</td>
+      <td><ul class="blist"><li>Rep names active partner contact and last touchpoint</li><li>At least 1 referral or co-sell opp identified</li><li>Event follow-up sequences confirmed active in Outreach</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Partners</a><a href="syllabus.html" class="s-pill green">Events</a><a href="syllabus.html" class="s-pill green">Outbound Motion Advanced</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge green">Productivity & Tool Mastery</span></td>
+      <td>Sharing wins, call clips, and messaging ideas in team channels. Beginning to act as a resource for newer reps</td>
+      <td><ul class="blist"><li>Manager observes 2+ #outbound or #wins Slack posts in Months 4–6</li><li>Rep has shared at least 1 Gong clip with written commentary</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill green">Weekly Gong Call Review</a></div></td>
+    </tr>
+  </table>
+</div>
+
+<!-- YEAR 1 -->
+<div class="ms-block" id="year1">
+  <div class="ms-hdr slate"><span class="m-label">Milestone</span><h2>After Year 1</h2><span class="m-sub">12-month performance review</span></div>
+  <table class="ms-table">
+    <tr><th class="col-comp">Competency</th><th class="col-do">What they should be able to do</th><th class="col-meas">How we measure it</th><th class="col-sess">Supporting sessions</th></tr>
+    <tr>
+      <td><span class="c-badge slate">Opportunity & Revenue Mgmt</span></td>
+      <td>Met or exceeded ramp-adjusted quota for at least 2 consecutive quarters. Articulate what's working and what isn't</td>
+      <td><ul class="blist"><li>Salesforce quota attainment reviewed at 12-Month Review</li><li>Rep presents self-assessment: what drove wins, what they'd change</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">Day / Week in the Life of an AE</a><a href="syllabus.html" class="s-pill slate">Weekly Gong Call Review</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge slate">Outbound Motion & Prospecting</span></td>
+      <td>Treat their book as a territory. Clear view of top 20 accounts, their history, and a multi-threaded strategy for each</td>
+      <td><ul class="blist"><li>Rep presents territory plan at 12-Month Review</li><li>Includes: top 20 accounts, Demandbase intent, relationship depth, next 90-day strategy</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">Using Gong</a><a href="syllabus.html" class="s-pill slate">Day / Week in the Life of an AE</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge slate">Effective Communication</span></td>
+      <td>Closed at least one complex, multi-stakeholder deal. Managed legal, procurement, and IT objections</td>
+      <td><ul class="blist"><li>Rep walks through 1 closed deal end-to-end: stakeholders, blockers, how they navigated</li><li>Confirmed in Salesforce</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">SE Partnership & Rules of Engagement</a><a href="syllabus.html" class="s-pill slate">SE Partnership &amp; Rules of Engagement</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge slate">Productivity & Tool Mastery</span></td>
+      <td>Ready to shadow onboarding sessions, share Gong calls, or mentor incoming reps. Has something to teach</td>
+      <td><ul class="blist"><li>Manager nominates rep as potential mentor or call library contributor</li><li>Rep has shared 3+ Gong clips with written commentary in team channels</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">Weekly Gong Call Review</a><a href="syllabus.html" class="s-pill slate">Homeroom & Missions</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge slate">Outbound Motion & Prospecting</span></td>
+      <td>Build a 90-day account plan for top-tier opportunities. Know how to work with Marketing, SE, and PS to surround an account</td>
+      <td><ul class="blist"><li>Rep submits written 90-day account plan for top opportunity at 12-Month Review</li><li>Plan includes: stakeholder map, champion status, cross-functional asks</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">Using Gong</a><a href="syllabus.html" class="s-pill slate">SE Partnership & Rules of Engagement</a></div></td>
+    </tr>
+    <tr>
+      <td><span class="c-badge slate">Role & Expectations</span></td>
+      <td>Had a formal career development conversation. Understands the path to the next role and has 2 specific goals for Year 2</td>
+      <td><ul class="blist"><li>Career development plan documented and shared in writing at 12-Month Review</li><li>At least 2 specific development goals with timelines identified</li></ul></td>
+      <td><div class="s-pills"><a href="syllabus.html" class="s-pill slate">Day / Week in the Life of an AE</a><a href="syllabus.html" class="s-pill slate">Tools: Gong- Call Intelligence</a></div></td>
+    </tr>
+  </table>
+</div>
+
+</div>
+</body>
+</html>
